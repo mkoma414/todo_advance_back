@@ -73,3 +73,8 @@ end
 
 gem 'rack-cors'
 gem 'pry-rails'
+
+group :production do
+  gem 'pg'
+end
+
