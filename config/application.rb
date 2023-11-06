@@ -20,17 +20,5 @@ module TodoAdvanceBackRails7
     # config.eager_load_paths << Rails.root.join("extras")
     # config/application.rb
 
-
-    # CORS設定
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins 'https://task-checker-pi.vercel.app'
-        resource '*',
-          headers: :any,
-          methods: [:get, :post, :put, :patch, :delete, :options, :head],
-          credentials: false
-      end
-    end
-
   end
 end
